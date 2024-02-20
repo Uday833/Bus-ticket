@@ -1,0 +1,21 @@
+.banner {
+    margin: auto;
+    height: 500px;
+    width: 1170px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("/B9A5-smart-ticketing/images/banner.png");
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bandiv1 {
+    width: 676px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
