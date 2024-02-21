@@ -11,97 +11,126 @@
 <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <main>
     <!-- nav-bar -->
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+    <section>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+            <a class="btn btn-ghost text-xl">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-xl">P-Ticket</a>
+          <div class="navbar-end">
+            <button class="btn rounded-full bg-green-100 text-green-500 px-4">
+              <span id="current-life">Bus</span>
+              <img src="/B9A5-smart-ticketing/images/bus-icon.png" alt="">
+          </button>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button class="btn rounded-full bg-green-100 text-green-500 px-4">
-            <span id="current-life">Bus</span>
-            <img src="/B9A5-smart-ticketing/images/bus-icon.png" alt="">
-        </button>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
     <!-- banner ------------------------------------------------------------------->
-    <div class="banner">
-      <div class="bandiv1">
-        <h1 style="font-size: 64px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin: 0;"> End-to-End Travel with </h1>
-        <h3 class="text-green-500" style="font-size: 44px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin: 0;">P Paribahan</h3>
-        <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 18px;">
-          Yes, you can run unit tests and view the results directly within the app. The 
-          integrated testing features allow for a streamlined 
-        </p>  
-        <div class="button-container text-center" style="margin-top: 40px;"> <!-- New container for the button -->
-          <button type="submit" class="rounded-3xl px-4 bg-green-500 text-black p-2 "> Buy Ticket</button>
+    <section>
+      <div class="banner">
+        <div class="bandiv1">
+          <h1 style="font-size: 64px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin: 0;"> End-to-End Travel with </h1>
+          <h3 class="text-green-500" style="font-size: 44px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;margin: 0;">P Paribahan</h3>
+          <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 18px;">
+            Yes, you can run unit tests and view the results directly within the app. The 
+            integrated testing features allow for a streamlined 
+          </p>  
+          <div class="button-container text-center" style="margin-top: 40px;"> <!-- New container for the button -->
+            <button type="submit" class="rounded-3xl px-4 bg-green-500 text-black p-2 "> Buy Ticket</button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- offer------------------------------------------- -->
-    <div>
-    <div class="flex justify-between">
+    <section>
       <div>
-        <div class="stats bg-yellow-500 text-primary-content" style="margin-top: 40px; margin-left: 55px; ">
-          <div class="stat">
-            <div class="stat-value">15% OFF</div>
-            <div class="">on your next purchase</div>
-            <div class="text-gray-600">use by January 2024</div>
-          </div>
-          <div class="stat">
-            <div class="stat-value">NEW 15</div>
-            <div class="text-gray-600">coupon Code</div> 
-          </div>
-        </div>
-      </div>
-      <div>
-        <div>
-          <div class="stats bg-pink-400 text-primary-content" style="margin-top: 40px;margin-right: 55px;">
-            <div class="stat">
-              <div class="stat-value">20% OFF</div>
-              <div class="">on your next purchase</div>
-              <div class="stat-title text-gray-600">use by January 2024</div>
+        <div class="flex justify-between">
+          <div>
+            <div class="stats bg-yellow-500 text-primary-content" style="margin-top: 40px; margin-left: 55px; ">
+              <div class="stat">
+                <div class="stat-value">15% OFF</div>
+                <div class="">on your next purchase</div>
+                <div class="text-gray-600">use by January 2024</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">NEW 15</div>
+                <div class="text-gray-600">coupon Code</div> 
+              </div>
             </div>
-            <div class="stat">
-              <div class="stat-value">couple 20</div>
-              <div class="stat-title text-gray-600">coupon Code</div> 
-            </div>
-            
+          </div>
+          <div>
+            <div>
+              <div class="stats bg-pink-400 text-primary-content" style="margin-top: 40px;margin-right: 55px;">
+                <div class="stat">
+                  <div class="stat-value">20% OFF</div>
+                  <div class="">on your next purchase</div>
+                  <div class="stat-title text-gray-600">use by January 2024</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-value">couple 20</div>
+                  <div class="stat-title text-gray-600">coupon Code</div> 
+                </div>
+                
+              </div>
+              
           </div>
           
+        </div>
+        
       </div>
-      
-    </div>
+      <div class="button-container text-center" style="margin-top: 60px; "> <!-- Updated button container -->
+        <button type="" class="rounded-3xl px-4 bg-white text-green-400 p-2 ">See All Offers</button>
+      </div>
+    </section>
+
+  <!-- ticket part-------------------------------------------------------- -->
+  <section>
+    <div class="stats bg-white text-primary-content" style="margin-top: 40px;margin-right: 55px;">
+      <div class="stat flex">
+        <div><img src="B9A5-smart-ticketing/images/bus-icon.png" alt=""></div>
+        <div>
+        <h1 class="bold">Greenline Paribahan</h1>
+        <h3>Coach-009-WEB ! AC_Business</h3>
+      </div>
+        <div>
+
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">550 Taka</div>
+        <div class="stat-title text-gray-600">Per Seat</div> 
+      </div>
     
-  </div>
-  <div class="button-container text-center" style="margin-top: 60px; "> <!-- Updated button container -->
-    <button type="" class="rounded-3xl px-4 bg-white text-green-400 p-2 ">See All Offers</button>
-  </div>
+  </section>
+
+  </main>
 
 
 
